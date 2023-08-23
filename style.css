@@ -11,6 +11,7 @@ body {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(150px, 276px));
   gap: 2rem;
+  margin-bottom: 20px;
 }
 .produktliste article {
   display: flex;
@@ -30,6 +31,7 @@ h1 {
   color: white;
   padding-top: 20px;
 }
+
 .shadow {
   text-shadow: 70px 60px 70px #ff0000, /* Red shadow */ -70px -3px 70px #00ff00, /* Green shadow */ 70px -10px 70px #0000ff, /* Blue shadow */ -70px 90px 70px #ffff00, /* Yellow shadow */ -30px 10px 70px khaki;
 }
@@ -41,6 +43,7 @@ h2 {
 h3 {
   color: lightgray;
   font-family: "Rajdhani", sans-serif;
+  margin: 0;
 }
 
 h4 {
@@ -52,18 +55,45 @@ h4 {
 p {
   color: gray;
   font-family: "Rajdhani", sans-serif;
-  margin: 0;
+  margin-top: -18px;
+}
+dl {
+  color: lightgray;
 }
 a {
   text-decoration: none;
 }
+dd,
+dt {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 2px;
+}
+dd {
+  padding-bottom: 20px;
+  margin: 0;
+}
+article a {
+  color: whitesmoke;
+  text-decoration: underline darkgrey;
+}
 nav a {
   color: whitesmoke;
   font-family: "Rajdhani", sans-serif;
-  margin-right: 10px;
+  margin-right: 5px;
   font-size: 1.2rem;
+  text-decoration: underline darkgray;
 }
-
+.info h3 {
+  font-size: 2rem;
+  margin-bottom: 110px;
+}
+.info .text {
+  font-size: 3rem;
+}
+.info p {
+  font-size: 1.5rem;
+  margin-top: -35px;
+}
 .kategoriliste {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -80,6 +110,54 @@ nav a {
   font-size: 1.5rem;
 }
 
+.strball {
+  width: 75%;
+  margin-bottom: 20px;
+}
+.grid1_1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+.tilbud {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.tilbud p {
+  text-align: end;
+  background-color: red;
+  padding: 0.2rem;
+  color: whitesmoke;
+  margin: 0;
+  padding-left: 7px;
+  margin-left: 96px;
+  font-size: 19px;
+}
+article.udsolgt::before {
+  content: "UDSOLGT";
+  position: absolute;
+  background: whitesmoke;
+  color: black;
+  padding: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: solid;
+}
+
+article.tilbudpris::before {
+  content: "TILBUD";
+  position: absolute;
+  background: red;
+  color: whitesmoke;
+  padding: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: solid;
+}
+
+article.udsolgt img {
+  opacity: 0.5;
+}
 /* header */
 
 @media (min-width: 700px) {
