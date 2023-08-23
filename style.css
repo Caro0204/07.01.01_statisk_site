@@ -3,8 +3,8 @@ img {
   height: auto;
   display: block;
 }
-main {
-  max-width: 1200px;
+body {
+  max-width: 1256px;
   margin: 0 auto;
 }
 .produktliste main {
@@ -25,6 +25,13 @@ body {
 /* fonts*/
 h1 {
   font-family: "Tulpen One", cursive;
+  font-size: 8rem;
+  margin-top: 5px;
+  margin-left: 30px;
+  color: white;
+}
+.shadow {
+  text-shadow: 70px 60px 70px #ff0000, /* Red shadow */ -70px -3px 70px #00ff00, /* Green shadow */ 70px -10px 70px #0000ff, /* Blue shadow */ -70px 90px 70px #ffff00; /* Yellow shadow */
 }
 h2 {
   color: whitesmoke;
@@ -38,4 +45,18 @@ h3 {
 p {
   color: gray;
   font-family: "Rajdhani", sans-serif;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
+
+/* header */
+
+@media (min-width: 700px) {
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 }
