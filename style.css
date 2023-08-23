@@ -16,3 +16,26 @@ main {
   display: flex;
   flex-direction: column;
 }
+
+/* baggrund */
+body {
+  background-color: rgb(40, 40, 40);
+}
+
+/* fonts*/
+h1 {
+  font-family: "Tulpen One", cursive;
+}
+h2 {
+  color: whitesmoke;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 2px;
+}
+h3 {
+  color: lightgray;
+  font-family: "Rajdhani", sans-serif;
+}
+p {
+  color: gray;
+  font-family: "Rajdhani", sans-serif;
+}
