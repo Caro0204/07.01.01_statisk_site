@@ -33,7 +33,7 @@ h1 {
 }
 
 .shadow {
-  text-shadow: 70px 60px 70px #ff0000, /* Red shadow */ -70px -3px 70px #00ff00, /* Green shadow */ 70px -10px 70px #0000ff, /* Blue shadow */ -70px 90px 70px #ffff00, /* Yellow shadow */ -30px 10px 70px khaki;
+  text-shadow: 200px 100px 400px #ff00c8, -400px -200px 400px #fd0, 300px -200px 400px #00f, -90px -100px 300px khaki, 100px 200px 300px purple, 100px 200px 300px whitesmoke, -1px -3px 1px black, -90px -100px 300px seashell;
 }
 h2 {
   color: whitesmoke;
@@ -60,6 +60,11 @@ p {
 dl {
   color: lightgray;
 }
+/*
+a:hover {
+  text-decoration: underline whitesmoke;
+}
+*/
 a {
   text-decoration: none;
 }
@@ -157,6 +162,31 @@ article.tilbudpris::before {
 
 article.udsolgt img {
   opacity: 0.5;
+}
+
+/* Forside */
+.forsidetext {
+  text-align: center;
+  font-size: 30rem;
+  margin: 0;
+}
+@media (min-width: 700px) {
+  ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 150px;
+    margin-left: 150px;
+  }
+  ul a {
+    color: whitesmoke;
+    font-family: "Rajdhani", sans-serif;
+    margin: 10px;
+    font-size: 1.5rem;
+  }
+  li {
+    color: whitesmoke;
+  }
 }
 /* header */
 
