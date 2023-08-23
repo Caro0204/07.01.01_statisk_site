@@ -31,7 +31,7 @@ h1 {
   color: white;
 }
 .shadow {
-  text-shadow: 70px 60px 70px #ff0000, /* Red shadow */ -70px -3px 70px #00ff00, /* Green shadow */ 70px -10px 70px #0000ff, /* Blue shadow */ -70px 90px 70px #ffff00; /* Yellow shadow */
+  text-shadow: 70px 60px 70px #ff0000, /* Red shadow */ -70px -3px 70px #00ff00, /* Green shadow */ 70px -10px 70px #0000ff, /* Blue shadow */ -70px 90px 70px #ffff00, /* Yellow shadow */ -30px 10px 70px khaki;
 }
 h2 {
   color: whitesmoke;
@@ -56,6 +56,22 @@ nav a {
   margin-right: 10px;
   font-size: 1.2rem;
 }
+
+.kategoriliste {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1em;
+}
+.kategoriliste a {
+  color: whitesmoke;
+  text-decoration: none;
+  padding: 2em;
+  background-color: grey;
+  border-radius: 5px;
+  text-underline-offset: 2px;
+  font-family: "Rajdhani", sans-serif;
+}
+
 /* header */
 
 @media (min-width: 700px) {
