@@ -4,15 +4,12 @@ img {
   display: block;
 }
 body {
-  max-width: 1256px;
-  margin: 0 auto;
-}
-.space {
   max-width: 1200px;
+  margin: 0 auto;
 }
 .produktliste main {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(150px, 290px));
+  grid-template-columns: repeat(auto-fill, minmax(150px, 276px));
   gap: 2rem;
 }
 .produktliste article {
