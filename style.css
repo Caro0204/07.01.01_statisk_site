@@ -204,7 +204,11 @@ article.soldout img {
   text-align: end;
   font-size: 20px;
 }
-
+.rrabatryk {
+  color: red;
+  text-align: left;
+  font-size: 20px;
+}
 .rpris {
   color: red;
   font-size: 20px;
