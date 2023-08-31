@@ -15,7 +15,7 @@
 <body class="produktliste">
     <header class="header">
         <a href="index.html">
-            <h1>FASHION</h1>
+            <h1>People's apparel</h1>
         </a>
         <nav>
             <a href="kategori.html">Kategorier</a>
@@ -24,41 +24,70 @@
         </nav>
     </header>
     <main>
-        <article>
-            <img src="billeder/1533.webp" alt="car red t-shirt">
-            <h2>Car Red T-shirt</h2>
-            <p>T-shirt | Puma</p>
-            <h3>DKK 899,-</h3>
-            <a href="produkt.html">Se mere</a>
-        </article>
-        <article class="udsolgt">
-            <img src="billeder/1580.webp" alt="swimsuit">
-            <h2>Omen Cross-back Swimsuit</h2>
-            <p>Swimsuit | Decathlon</p>
-            <h3>DKK 999,-</h3>
-            <a href="produkt.html">Se mere</a>
-        </article>
-        <article class="tilbudpris">
-            <img src="billeder/1573.webp" alt="pants">
-            <h2>Omen Athletes Grey Track Pants</h2>
-            <p>Pants | Decathlon</p>
-            <h3>Før DKK 999,-</h3>
-            <div class="tilbud">
-                <h3>Nu DKK 659.34,-</h3>
-                <div>
-                    <p>34%</p>
+        <template id="smallProductTemplate">
+            <article class="smallProduct">
+                <a class="read-more" href="produkt.html">
+                    <img src="" alt="billede">
+                    <h2 class="productdisplayname"></h2>
+                    <p class="articletype"></p>
+                    <p class="price"></p>
+
+
+
+                    <div class="discount">
+                        <p class="rpris"></p>
+                        <p class="rrabat"></p>
+                    </div>
+                </a>
+            </article>
+        </template>
+        <!--  
+        <div class="grid"></div>
+        <template class="product">
+            <article>
+                <img src="billeder/1533.webp" alt="car red t-shirt">
+                <h2>Car Red T-shirt</h2>
+                <p class="articletype brandname"></p>
+                <h3 class="price"></h3>
+                <a href="produkt.html">Se mere</a>
+            </article>
+        </template>
+        <template>
+            <article class="udsolgt">
+                <img src="billeder/1580.webp" alt="swimsuit">
+                <h2>Omen Cross-back Swimsuit</h2>
+                <p>Swimsuit | Decathlon</p>
+                <h3>DKK 999,-</h3>
+                <a href="produkt.html">Se mere</a>
+            </article>
+        </template>
+        <template>
+            <article class="tilbudpris">
+                <img src="billeder/1573.webp" alt="pants">
+                <h2>Omen Athletes Grey Track Pants</h2>
+                <p>Pants | Decathlon</p>
+                <h3>Før DKK 999,-</h3>
+                <div class="tilbud">
+                    <h3>Nu DKK 659.34,-</h3>
+                    <div>
+                        <p>34%</p>
+                    </div>
                 </div>
-            </div>
-            <a href="produkt.html">Se mere</a>
-        </article>
-        <article>
-            <img src="billeder/1552.webp" alt="football">
-            <h2>Power Cat Trainer-R Football</h2>
-            <p>Football | Puma</p>
-            <h3>DKK 999,-</h3>
-            <a href="produkt.html">Se mere</a>
-        </article>
+                <a href="produkt.html">Se mere</a>
+            </article>
+        </template>
+        <template>
+            <article>
+                <img src="billeder/1552.webp" alt="football">
+                <h2>Power Cat Trainer-R Football</h2>
+                <p>Football | Puma</p>
+                <h3>DKK 999,-</h3>
+                <a href="produkt.html">Se mere</a>
+            </article>
+        </template>
+        -->
     </main>
+    <script src="script.js"></script>
 </body>
 
 </html>

@@ -10,12 +10,29 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rajdhani&family=Tulpen+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-image: url(billeder/bbk.svg);
+            background-size: 100%;
+            background-position: top;
+            background-repeat: no-repeat;
+        }
+
+        @media (min-width: 800px) {
+            body {
+                background-image: url(billeder/bbk.svg);
+                background-size: 100%;
+                background-position: top;
+                background-repeat: no-repeat;
+            }
+        }
+    </style>
 </head>
 
 <body>
     <header class="header">
         <a href="index.html">
-            <h1>FASHION</h1>
+            <h1>People's apparel</h1>
         </a>
         <nav>
             <a href="kategori.html">Kategorier</a>
@@ -26,16 +43,16 @@
         </nav>
     </header>
     <main>
-        <h4>Kategorier</h4>
+        <!-- <h4>Kategorier</h4> -->
         <section class="kategoriliste">
-            <a href="produktliste.html">Accessories</a>
-            <a href="produktliste.html">Sko</a>
-            <a href="produktliste.html">Sport</a>
-            <a href="produktliste.html">Tøj</a>
-            <a href="produktliste.html">Nyheder</a>
-            <a href="produktliste.html">Outlet</a>
+            <template>
+                <li><a href="produktliste.html">Accessories</a></li>
+            </template>
+            <ol>
+            </ol>
         </section>
     </main>
+    <script src="kategori.js"></script>
 </body>
 
 </html>

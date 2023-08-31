@@ -10,12 +10,29 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rajdhani&family=Tulpen+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-image: url(billeder/bbu.svg);
+            background-size: 100%;
+            background-position: top;
+            background-repeat: no-repeat;
+        }
+
+        @media (min-width: 800px) {
+            body {
+                background-image: url(billeder/bbu.svg);
+                background-size: 100%;
+                background-position: top;
+                background-repeat: no-repeat;
+            }
+        }
+    </style>
 </head>
 
 <body>
     <header class="header">
         <a href="index.html">
-            <h1>FASHION</h1>
+            <h1>People's apparel</h1>
         </a>
         <nav>
             <a href="kategori.html">Kategorier</a>
@@ -25,23 +42,43 @@
     </header>
     <main>
         <div class="grid1_1">
-            <img class="strball" src="billeder/1552.webp" alt="football">
+            <img class="imgstr" src="." alt="billede">
             <section class="info">
-                <h2 class="text">Power Cat Trainer-R Football</h2>
-                <p>Football | Puma</p>
-                <h3>DKK 999,-</h3>
+                <h2 class="text productdisplayname">navn</h2>
+                <p class="articletype"></p>
+                <p class="price"></p>
+                <div class="discount">
+                    <p class="rpris"></p>
+                    <p class="rrabat"></p>
+                </div>
+                <br>
+                <br>
+                <form>
+                    <label>
+                        <select name="size" id="sizeselect">
+                            <option>S</option>
+                            <option>M</option>
+                            <option>L</option>
+                            <option>XL</option>
+                        </select>
+                    </label>
+                    <button type="button">Add to basket</button>
+                </form>
+                <br>
+                <br>
                 <h2>Produkt information</h2>
                 <dl>
                     <dt>Model navn:</dt>
-                    <dd>Power Cat Trainer-R Football</dd>
-                    <dt>Farve:</dt>
-                    <dd>Rød og hvid</dd>
+                    <dd class="productdisplayname"></dd>
+                    <dt>Underkategori:</dt>
+                    <dd class="subcategory"></dd>
                     <dt>Produktnummer:</dt>
-                    <dd>1552</dd>
+                    <dd class="relid"></dd>
                 </dl>
             </section>
         </div>
     </main>
+    <script src="produkt.js"></script>
 </body>
 
 </html>

@@ -17,16 +17,40 @@ body {
   display: flex;
   flex-direction: column;
 }
+.smallProduct a {
+  text-decoration: none;
+}
+ol {
+  list-style: none;
+}
+li {
+  list-style: none;
+  text-align: center;
+}
 
+.text {
+  font-size: 20px;
+}
 /* baggrund */
 body {
   background-color: rgb(40, 40, 40);
 }
 
+.shop {
+  display: flex;
+  justify-content: center;
+  color: whitesmoke;
+  font-family: "Rajdhani", sans-serif;
+  font-size: 20px;
+}
+.bbu {
+  background-image: url(billeder/bbu.svg);
+}
+
 /* fonts*/
 h1 {
   font-family: "Tulpen One", cursive;
-  font-size: 8rem;
+  font-size: 5rem;
   margin-top: 5px;
   color: white;
   padding-top: 20px;
@@ -77,6 +101,10 @@ dd {
   padding-bottom: 20px;
   margin: 0;
 }
+
+dt {
+  text-decoration: underline;
+}
 article a {
   color: whitesmoke;
   text-decoration: underline darkgrey;
@@ -97,34 +125,37 @@ nav a {
 }
 .info p {
   font-size: 1.5rem;
-  margin-top: -35px;
 }
-.kategoriliste {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1.2rem;
-}
+
 .kategoriliste a {
   color: whitesmoke;
   text-decoration: none;
-  padding: 2rem;
-  background-color: grey;
+  padding: 1rem;
   border-radius: 10px;
   text-underline-offset: 2px;
   font-family: "Rajdhani", sans-serif;
   font-size: 1.5rem;
 }
-
+/*
 .strball {
   width: 75%;
   margin-bottom: 20px;
 }
+*/
+
+/* Produkt side */
 .grid1_1 {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 10px;
 }
-.tilbud {
+
+.imgstr {
+  width: 75%;
+  margin-bottom: 20px;
+  padding-left: 100px;
+}
+/* .tilbud {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 10px;
@@ -139,8 +170,8 @@ nav a {
   padding-left: 7px;
   margin-left: 96px;
   font-size: 19px;
-}
-article.udsolgt::before {
+} */
+.soldout::before {
   content: "UDSOLGT";
   position: absolute;
   background: whitesmoke;
@@ -148,9 +179,10 @@ article.udsolgt::before {
   padding: 1rem;
   font-family: Arial, Helvetica, sans-serif;
   text-decoration: solid;
+  pointer-events: none;
 }
 
-article.tilbudpris::before {
+.udsalg::before {
   content: "TILBUD";
   position: absolute;
   background: red;
@@ -160,16 +192,47 @@ article.tilbudpris::before {
   text-decoration: solid;
 }
 
-article.udsolgt img {
+article.soldout img {
   opacity: 0.5;
+  pointer-events: none;
+}
+
+/*******  pris *******/
+
+.rrabat {
+  color: red;
+  text-align: end;
+  font-size: 20px;
+}
+
+.rpris {
+  color: red;
+  font-size: 20px;
+}
+
+.price {
+  color: whitesmoke;
+}
+
+.discount {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 /* Forside */
 .forsidetext {
   text-align: center;
-  font-size: 30rem;
+  font-size: 20rem;
   margin: 0;
+  padding-top: 70px;
 }
+.bb {
+  background-image: url(billeder/bb.svg);
+  background-size: 100%;
+  background-position: top;
+  background-repeat: no-repeat;
+}
+
 @media (min-width: 700px) {
   ul {
     display: flex;
@@ -178,14 +241,14 @@ article.udsolgt img {
     margin-right: 150px;
     margin-left: 150px;
   }
-  ul a {
-    color: whitesmoke;
-    font-family: "Rajdhani", sans-serif;
-    margin: 10px;
-    font-size: 1.5rem;
-  }
+
   li {
     color: whitesmoke;
+    display: flex;
+    gap: 47px;
+    row-gap: 47px;
+    column-gap: 47px;
+    border-bottom: 1px solid white;
   }
 }
 /* header */
@@ -195,5 +258,11 @@ article.udsolgt img {
     display: flex;
     align-items: center;
     justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  ol {
+    column-count: 2;
   }
 }
