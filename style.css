@@ -57,7 +57,7 @@ h1 {
 }
 
 .shadow {
-  text-shadow: 200px 100px 400px #ff00c8, -400px -200px 400px #fd0, 300px -200px 400px #00f, -90px -100px 300px khaki, 100px 200px 300px purple, 100px 200px 300px whitesmoke, -1px -3px 1px black, -90px -100px 300px seashell;
+  text-shadow: 200px 100px 400px #00dbff, -400px -200px 400px #fd0, 300px -200px 400px #00f, -90px -100px 300px khaki, 100px 200px 300px purple, 100px 200px 300px whitesmoke, -1px -3px 1px black, -90px -100px 300px seashell;
 }
 h2 {
   color: whitesmoke;
